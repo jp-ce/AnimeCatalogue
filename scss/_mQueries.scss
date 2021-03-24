@@ -1,0 +1,83 @@
+@media screen and (min-width: 992px) {
+  .anime-section {
+    .anime-details {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      gap: 3rem;
+      align-items: center;
+      &-info {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  //navbar logos and text
+  .navbar {
+    .nav-center {
+      margin-left: 1.2rem;
+
+      .logo {
+        font-size: 1.7rem;
+        width: 10rem;
+      }
+    }
+
+    .nav-links a {
+      margin-right: 0rem;
+      letter-spacing: 1px;
+      font-size: 0.9rem;
+      padding: 0.15rem 0.2rem;
+    }
+  }
+  .anime-section {
+    .anime-details p {
+      line-height: 1.8;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 330px) {
+  //animeinfo button
+
+  .anime-section {
+    .anime-details p {
+      .mal-link {
+        margin-top: 2rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 310px) {
+  //navbar width, searchbar placeholder,
+
+  .navbar {
+    .nav-center {
+      margin-left: 1.1rem;
+
+      .logo {
+        font-size: 1.5rem;
+        width: 18rem;
+      }
+    }
+
+    .nav-links a {
+      margin-right: 0rem;
+      letter-spacing: 1px;
+      font-size: 0.5rem;
+      padding: 0.15rem 0.2rem;
+    }
+  }
+
+  .search-form {
+    .form-control {
+      input {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

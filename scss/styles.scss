@@ -1,0 +1,341 @@
+@import "config";
+@import "utilities";
+
+.navbar {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid $primaryColor;
+  box-shadow: $box-shadow;
+
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: $minWidth;
+    width: $smallWidth;
+    margin: 0 auto;
+    max-width: $maxWidth;
+
+    .logo {
+      font-size: 2rem;
+      width: 12rem;
+
+      &-color {
+        color: $primaryColor;
+        font-weight: bolder;
+      }
+    }
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-links a {
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    font-size: 1.2rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+// ------------------------------ ERROR PAGE ---------------------
+.error-page {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    margin-top: 3rem;
+    font-size: 3rem;
+  }
+}
+
+// ------------------------- SEARCH BAR --------------------
+.search {
+  margin-top: 2rem;
+}
+
+.search-form {
+  width: $searchWidth;
+  margin: 1rem auto;
+  max-width: $maxWidth;
+  background: $mainWhite;
+  padding: 2rem 2.5rem;
+  text-transform: capitalize;
+
+  .form-control {
+    label {
+      display: block;
+      margin-bottom: 1.25rem;
+      font-weight: bold;
+      letter-spacing: 0.25rem;
+      color: $primaryColor;
+    }
+
+    input {
+      width: 100%;
+      border: none;
+      border-color: transparent;
+      background: $mainBackground;
+      border-radius: $mainBorderRadius;
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// ------------------------- ANIME LIST -----------------
+.section {
+  display: grid;
+  place-items: center;
+  margin-top: 1.9rem;
+}
+.section-title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: $mainSpacing;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  margin-top: 4rem;
+}
+
+.animes-center {
+  width: $smallWidth;
+  margin: 0 auto;
+  margin-top: 4rem;
+  max-width: $fullWidth;
+  display: grid;
+  place-items: center;
+  row-gap: 3rem;
+  column-gap: 4rem;
+  grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+}
+
+//---------------------- ANIME -----------------
+.anime {
+  background: $mainWhite;
+  margin-bottom: 2rem;
+  box-shadow: $lightShadow;
+  transition: $mainTransition;
+  display: grid;
+  width: $tilesWidth;
+  height: 49rem;
+  grid-template-rows: auto 1fr;
+  border-radius: $mainBorderRadius;
+
+  &:hover {
+    box-shadow: $darkShadow;
+  }
+  & .img-container img {
+    height: 34rem;
+    width: $tilesWidth;
+    object-fit: cover;
+    border-top-left-radius: $mainBorderRadius;
+    border-top-right-radius: $mainBorderRadius;
+  }
+
+  .anime-footer {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+
+    h3,
+    h4,
+    p {
+      margin-bottom: 0.5rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+    p {
+      // color: $darkGrey;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+// -------------- ANIME INFO PAGE --------------
+.anime-section {
+  margin-top: 5rem;
+  text-align: center;
+
+  .anime-details {
+    width: $smallWidth;
+    max-width: $fullWidth;
+    margin: 0 auto;
+    text-align: left;
+
+    img {
+      border-radius: $mainBorderRadius;
+    }
+    p {
+      font-weight: bold;
+      text-transform: capitalize;
+      line-height: 1.8;
+      font-size: 1.2rem;
+      .mal-link {
+        margin-top: 2rem;
+        font-size: 1.4rem;
+      }
+    }
+    span {
+      margin-right: 0.5rem;
+    }
+    &-data {
+      background: $primaryLightColor;
+      padding: 0.25rem 0.5rem;
+      border-radius: $mainBorderRadius;
+      color: $primaryColor;
+    }
+    &-info {
+      padding-top: 2rem;
+    }
+  }
+}
+
+// ------------------------------ COPYRIGHT ---------------------------------
+
+.copyright-footer {
+  display: grid;
+  place-items: center;
+  margin-top: 3rem;
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+// -------------------------- LOADING SPINNER ----------------------
+
+.loader,
+.loader:before,
+.loader:after {
+  background: transparent;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader {
+  color: $primaryColor;
+  text-indent: -9999em;
+  margin: 88px auto;
+  margin-top: 20rem;
+  position: relative;
+  font-size: 3rem;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: "";
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+//bookmarks
+
+.bookmarks-center {
+  width: $smallWidth;
+  margin: 0 auto;
+  margin-top: 4rem;
+  max-width: $fullWidth;
+  display: grid;
+  place-items: center;
+  row-gap: 2rem;
+  column-gap: 2.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+.bookmarks {
+  background: $mainWhite;
+  margin-bottom: 2rem;
+  box-shadow: $lightShadow;
+  transition: $mainTransition;
+  display: grid;
+  width: 17rem;
+  height: 37rem;
+  grid-template-rows: auto 1fr;
+  border-radius: $mainBorderRadius;
+
+  &:hover {
+    box-shadow: $darkShadow;
+  }
+
+  & .img-container img {
+    height: 24rem;
+    width: 17rem;
+    object-fit: cover;
+    border-top-left-radius: $mainBorderRadius;
+    border-top-right-radius: $mainBorderRadius;
+  }
+
+  &-footer {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    margin-top: 1rem;
+
+    h3,
+    h4,
+    p {
+      font-size: 0.8rem;
+      margin-bottom: 0.4rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+    p {
+      // color: $darkGrey;
+      font-size: 0.9rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+  }
+  .bookmark-detail {
+    height: 2rem;
+    font-size: 0.5rem;
+  }
+}
+
+@import "mQueries";

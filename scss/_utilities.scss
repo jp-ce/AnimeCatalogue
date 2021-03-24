@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  color: $main-text-colour;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1.25rem;
+  letter-spacing: $mainSpacing;
+}
+p {
+  margin-bottom: 1.25rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: $mainBlack;
+}
+img {
+  width: 100%;
+  display: block;
+}
+h1,
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.btn,
+.btn-white,
+.btn-primary {
+  text-transform: uppercase;
+  letter-spacing: $mainSpacing;
+  color: $primaryColor;
+  border: 2px solid $primaryColor;
+  padding: 0.45rem 0.8rem;
+  display: inline-block;
+  transition: $mainTransition;
+  cursor: pointer;
+  font-size: 0.8rem;
+  background: transparent;
+  border-radius: $mainBorderRadius;
+  display: inline-block;
+}
+.btn-shadow {
+  box-shadow: $lightShadow;
+  border-radius: $mainBorderRadius;
+}
+.btn:hover {
+  background: $primaryColor;
+  color: $mainWhite;
+}
+.btn-white {
+  background: transparent;
+  color: $mainWhite;
+  border-color: $mainWhite;
+}
+.btn-white:hover {
+  background: $mainWhite;
+  color: $primaryColor;
+}
+.btn-primary {
+  background: $primaryColor;
+  color: $mainWhite;
+  border-color: transparent;
+}
+.btn-primary:hover {
+  background: $primaryLightColor;
+  color: $main-text-colour;
+  font-weight: bold;
+}
+.btn-block {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  box-shadow: $lightShadow;
+  text-align: center;
+}
+.btn-details {
+  display: grid;
+  place-items: center;
+}
+.btn-details:hover {
+  background: $primaryLightColor;
+  border-color: $primaryLightColor;
+}
+
+.btn-remove-bookmark {
+  border: 2px solid $mainRed;
+  transition: $mainRed;
+}
+
+.btn-remove-bookmark:hover {
+  background: $mainRed;
+  color: $mainWhite;
+}
+
+.btn-clear-bookmark {
+  height: 3rem;
+  width: 15rem;
+  background: $mainRed;
+  border: 2px solid $mainRed;
+  transition: $mainRed;
+  color: $mainWhite;
+}
+
+.btn-clear-bookmark:hover {
+  background: $primaryDangerColor;
+  color: $mainWhite;
+  border: 2px solid $primaryDangerColor;
+}
+
+//COLOURS
+
+.good {
+  color: green;
+}
+.medium {
+  color: orange;
+}
+.bad {
+  color: red;
+}

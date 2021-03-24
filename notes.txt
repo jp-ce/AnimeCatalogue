@@ -1,0 +1,26 @@
+To do's:
+
+Functionality / Goals
+[x] set up all the pages and components
+    [x] set up navigations
+
+[x] set up context.js
+    [x] wire everything using custom hook and context api. 
+
+[ ] implement a search bar component
+    [ ] pass this search term globally as props
+
+[ ] access jikan's API
+
+[ ] Provide results based on the search term
+    [ ] results has to be clicakble - can be direct to blank/ modal page
+    [ ] this page has to display info about the anime - handled by
+        React Router, Route, Provider, Switch ...
+    [ ] Also provide a link which directs to the official my animelist
+
+[ ] Have a favourite page (bookmarked page)
+    [ ] items are added here when users bookmark it
+    [ ] make use of local storage to keep track of the bookmarked items
+    [ ] be able to close an anime if you dont want it bookmarked anymore
+
+    

@@ -1,0 +1,26 @@
+//colours
+$main-text-colour: black;
+$primaryLightColor: #c9cbe7;
+$primaryColor: #1a228d;
+$mainWhite: #fff;
+$mainBackground: #f1f5f8;
+$mainOverlay: rgba(35, 10, 36, 0.4);
+$mainBlack: #222;
+$mainRed: rgb(148, 24, 24);
+$primaryDangerColor: rgb(197, 130, 130);
+
+//measurements
+$mainBorderRadius: 0.25rem;
+$smallWidth: 88vw;
+$searchWidth: 70vw;
+$tilesWidth: 24rem;
+$maxWidth: 80rem;
+$minWidth: 250px;
+$fullWidth: 1170px;
+
+//misc
+$mainTransition: all 0.3s linear;
+$mainSpacing: 0.2rem;
+$lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+$darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+$box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.4);
