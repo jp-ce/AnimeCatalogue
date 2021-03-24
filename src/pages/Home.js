@@ -11,7 +11,7 @@ const Home = () => {
     <main>
       <SearchBar />
       <AnimeList />
-      {loading && <Footer />}
+      {loading || <Footer />}
     </main>
   );
 };

@@ -1,6 +1,8 @@
 import React from "react";
 import Bookmark from "./Bookmark";
 import Loading from "./Loading";
+import { Link } from "react-router-dom";
+
 import { useGlobalContext } from "../context";
 const AnimeList = () => {
   const { bookmarks, loading, setBookmarks } = useGlobalContext();
@@ -18,7 +20,14 @@ const AnimeList = () => {
   }
 
   if (bookmarks.length < 1) {
-    return <h2 className="section title">no bookmarks to show</h2>;
+    return (
+      <div className="error-page">
+        <Link to="/" className="btn btn-primary">
+          Back to home
+        </Link>
+        <h1>no bookmarks to show </h1>
+      </div>
+    );
   }
 
   return (

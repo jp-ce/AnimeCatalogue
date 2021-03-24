@@ -3,10 +3,13 @@ import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context";
 
 const Anime = ({ id, image_url, episodes, score, title, airing, end_date }) => {
-  const { addBookmark, animes } = useGlobalContext();
+  const { addBookmark, animes, bookmarks } = useGlobalContext();
 
   const handleBookmark = (id) => {
-    const animeArray = animes.filter((x) => x.id === id);
+    const bookmarkArray =
+      bookmarks.length > 0 ? bookmarks.map((x) => x.id) : [];
+    const animeArray =
+      !bookmarkArray.includes(id) && animes.filter((x) => x.id === id);
     if (animeArray) {
       addBookmark(...animeArray);
     }
