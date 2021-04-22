@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# AnimeCatalogue
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Project Image](./public/Readme_image.PNG)
 
-## Available Scripts
+> Pocket anime catalogue
 
-In the project directory, you can run:
+---
 
-### `npm start`
+### Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Sections headers used to reference location of destination.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [Demo](#demo)
+- [Description](#description)
+- [How To Use](#how-to-use-in-your-local-environment)
+- [API reference](#api-used-reference)
+- [Author Info](#author-info)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Demo
 
-### `npm run build`
+> View demo at: https://anime-catalogue.netlify.app/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Description
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This is a pocket catalogue for Anime where a user can search an anime, view its details, and bookmark them. This application uses the Jikan API which is the unofficial MyAnimeList API. The API itself is completely public and does not require OAuth from the user. The get request/anime lookup from the API does not have a daily limit, so the user does not have to worry about going over any daily quotas for fetching data.
 
-### `npm run eject`
+This project demonstrates the effectiveness of a single-paged application, showing the fast nature of React.js. React-router-dom library is used for routing and hooks and Context API for state management.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Technologies
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Visual Code Studio
+- React.js
+- JavaScript
+- Markdown
+- HTML & CSS (SASS)
+- UI/UX
+- Responsive
+- YouTube API
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[Back To The Top](#animecatalogue)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## How to use in your local environment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Prerequisites
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- You must have node.js installed to have npm
+- Clone this repository
 
-### Code Splitting
+#### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+`npm install && npm start `
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## API used reference
 
-### Making a Progressive Web App
+Jikan API: https://jikan.moe/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+[Back To The Top](#animecatalogue)
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Author Info
 
-### Deployment
+- linkedIn - [@jpev.dev](https://linkedin.com/in/jianneevangelista)
+- Website - [jp.ev](https://jpce.netlify.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Back To The Top](#animecatalogue)
